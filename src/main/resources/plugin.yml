@@ -1,0 +1,10 @@
+name: AntiBlockDrop
+main: net.achievevoid.antiblockdrop.AntiBlockDrop
+version: 1.0
+author: AchieveVoid(huanmoon007)
+
+commands:
+  claim:
+    description: Claim items you didn't get before caused by inventory full
+    usage: /claim
+    permission: antiblockdrop.claim

@@ -1,0 +1,1 @@
+claim-enabled: true  # if disabled, when player's inventory is full, the item will drop on the ground but not be in the /claim list

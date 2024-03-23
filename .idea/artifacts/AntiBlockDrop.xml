@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AntiBlockDrop">
+    <output-path>$PROJECT_DIR$/out/artifacts/AntiBlockDrop</output-path>
+    <root id="archive" name="AntiBlockDrop.jar">
+      <element id="library" level="project" name="spigot-1.8.8-R0.1-SNAPSHOT-latest" />
+      <element id="module-output" name="AntiBlockDrop" />
+    </root>
+  </artifact>
+</component>
