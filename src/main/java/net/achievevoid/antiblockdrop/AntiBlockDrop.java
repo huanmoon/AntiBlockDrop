@@ -37,9 +37,10 @@ public class AntiBlockDrop extends JavaPlugin {
     private void loadConfig() {
         this.saveDefaultConfig();
         File configFile = new File(this.getDataFolder(), "config.yml");
-        if (!configFile.exists()) {
+        if(!configFile.exists()) {
             this.getLogger().warning("Config file doesn't exist!");
-        } else {
+        }
+        else {
             this.reloadConfig();
         }
     }

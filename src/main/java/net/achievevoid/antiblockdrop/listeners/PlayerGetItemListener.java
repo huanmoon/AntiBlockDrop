@@ -1,9 +1,6 @@
 package net.achievevoid.antiblockdrop.listeners;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 import net.achievevoid.antiblockdrop.AntiBlockDrop;
 import net.achievevoid.antiblockdrop.events.PlayerGetItemEvent;
@@ -14,7 +11,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
 
 public class PlayerGetItemListener implements Listener {
-    public static HashMap unclaimedItems = new HashMap();
+    public static HashMap<UUID, List<ItemStack>> unclaimedItems = new HashMap<>();
 
     @EventHandler
     private void onGetItem(PlayerGetItemEvent event) {
@@ -25,22 +22,16 @@ public class PlayerGetItemListener implements Listener {
         else {
             Player player = event.getPlayer();
             List<ItemStack> remainingItems = new ArrayList<>();
-            Iterator<ItemStack> var5 = items.iterator();
-            ItemStack itemStack;
-            while(var5.hasNext()) {
-                itemStack = var5.next();
-                remainingItems.addAll(player.getInventory().addItem(new ItemStack[]{itemStack}).values());
+            for(ItemStack itemStack : items) {
+                remainingItems.addAll(player.getInventory().addItem(itemStack).values());
             }
-
             if (!remainingItems.isEmpty()) {
                 if (AntiBlockDrop.cliamEnabled) {
-                    ((List)unclaimedItems.get(player.getUniqueId())).addAll(remainingItems);
-                    player.sendMessage(ChatColor.RED + "Oops! Your inventory is full and there are " + ((List<?>)unclaimedItems.get(player.getUniqueId())).size() + " items remaining! Use /claim to claim them.");
-                } else {
-                    var5 = remainingItems.iterator();
-
-                    while(var5.hasNext()) {
-                        itemStack = var5.next();
+                    unclaimedItems.get(player.getUniqueId()).addAll(remainingItems);
+                    player.sendMessage(ChatColor.RED + "Oops! Your inventory is full and there are " + unclaimedItems.get(player.getUniqueId()).size() + " items remaining! Use /claim to claim them.");
+                }
+                else {
+                    for(ItemStack itemStack : items) {
                         player.getWorld().dropItem(player.getLocation(), itemStack);
                     }
                 }

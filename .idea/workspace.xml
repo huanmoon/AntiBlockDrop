@@ -9,7 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a58d2b92-8f60-4c1f-ab45-96c151a359cd" name="Changes" comment="v1.0" />
+    <list default="true" id="a58d2b92-8f60-4c1f-ab45-96c151a359cd" name="Changes" comment="v1.0">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AntiBlockDrop/AntiBlockDrop.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/AntiBlockDrop/AntiBlockDrop.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/achievevoid/antiblockdrop/AntiBlockDrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/achievevoid/antiblockdrop/AntiBlockDrop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/achievevoid/antiblockdrop/commands/Claim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/achievevoid/antiblockdrop/commands/Claim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/achievevoid/antiblockdrop/listeners/PlayerGetItemListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/achievevoid/antiblockdrop/listeners/PlayerGetItemListener.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,21 +45,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/huan_moon/Seaman/Codes/AntiBlockDrop/lib/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar",
-    "onboarding.tips.debug.path": "/home/huan_moon/Seaman/Codes/AntiBlockDrop/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/huan_moon/Seaman/Codes/AntiBlockDrop&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/huan_moon/Seaman/Codes/AntiBlockDrop/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
@@ -112,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711171842563</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="v1.0">
+      <option name="closed" value="true" />
+      <created>1711204346665</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711204346665</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,8 +171,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="v1.0" />
     <MESSAGE value="v1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.1" />
+    <MESSAGE value="v1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.0" />
   </component>
 </project>
